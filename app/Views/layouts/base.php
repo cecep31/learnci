@@ -9,6 +9,8 @@
 
 </head>
 <body>
+    
+    <?= $this->include('layouts/header') ?>
     <?= $this->renderSection('content') ?>
 
     <script src="<?= base_url('semantic/semantic.js') ?>"></script>
