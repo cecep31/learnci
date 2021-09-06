@@ -36,6 +36,10 @@ $routes->get('/contact', 'ContactController::index');
 $routes->get('/blog', 'PostController::index');
 $routes->get('/news', 'NewsController::index');
 $routes->get('/news/(:any)', 'NewsController::read/$1');
+$routes->group('admin', function($routes)
+{
+	$routes->get('news','NewsController::index');
+});
 
 
 /*

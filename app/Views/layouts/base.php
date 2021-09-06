@@ -13,7 +13,7 @@
     <?= $this->include('layouts/header') ?>
     <?= $this->renderSection('content') ?>
 
-    <script src="<?= base_url('semantic/semantic.js') ?>"></script>
+    <script src="<?= base_url('js/bootstrap.js') ?>"></script>
     
 </body>
 </html>
