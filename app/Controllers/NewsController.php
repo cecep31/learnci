@@ -8,7 +8,7 @@ class NewsController extends BaseController
 {
 	public function index()
 	{
-		
+		return view('pages/news');
 	}
 	public function read()
 	{
