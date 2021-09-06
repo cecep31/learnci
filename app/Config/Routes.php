@@ -36,6 +36,8 @@ $routes->get('/default', 'Home::index');
 $routes->get('/','home::index');
 $routes->get('/contact','ContactController::index');
 $routes->get('/blog','PostController::index');
+$routes->get('/news', 'NewsController::index');
+$routes->get('/news/(:any)', 'NewsController::read/$1');
 
 
 /*
