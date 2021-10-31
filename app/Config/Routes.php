@@ -35,6 +35,8 @@ $routes->get('', 'Home::index');
 $routes->get('/contact', 'ContactController::index');
 $routes->get('/blog', 'PostController::index');
 $routes->get('/news', 'NewsController::index');
+$routes->get('/news-add', 'NewsController::create');
+$routes->post('/news-add', 'NewsController::store');
 $routes->get('/news/(:any)', 'NewsController::read/$1');
 $routes->group('admin', function($routes)
 {
